@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Sen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:description" content="Pressing buttons...">
+        <meta property="og:url" content="https://test.sen.cat">
+        <meta property="og:image" content="https://test.sen.cat/img/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="icon" type="image/ico" href="./img/favicon.ico">
+        <link rel="stylesheet" href="styles/fontawesome.min.css">
+        <link rel="stylesheet" href="styles/all.min.css">
+        <link rel="stylesheet" href="styles/brands.min.css">
+        <link rel="stylesheet" href="styles/solid.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Sen</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg w-75">
+                    <div class="card bg-dark">
+                        <h2 class="card-header">Links</h2>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-dark h6"><a href="https://github.com/That-Thing" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> Github</a></li>
+                                <li class="list-group-item bg-dark h6"><a href="https://www.last.fm/user/Sen00" target="_blank"><i class="fab fa-lastfm" aria-hidden="true"></i> LastFM</a></li>
+                                <li class="list-group-item bg-dark h6"><a href="https://steamcommunity.com/id/notthatthing" target="_blank"><i class="fab fa-steam" aria-hidden="true"></i> Steam</a></li>
+                                <li class="list-group-item bg-dark h6"><a href="https://soundcloud.com/pressingbuttons" target="_blank"><i class="fab fa-soundcloud" aria-hidden="true"></i> SoundCloud</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-dark mt-4 mb-4">
+                        <h2 class="card-header">Current Projects</h2>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-dark text-light h6">Filehost/paste service</li>
+                                <li class="list-group-item bg-dark text-light h6">Music</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg w-50" id="sen-col">
+                    <div class="card bg-dark" data-tilt data-tilt-max="5" data-tilt-reverse="true" id="sen-card">
+                        <div class="card-body text-center">
+                            <span class="sen">Sen</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg w-75">
+                    <div class="card bg-dark">
+                        <h2 class="card-header">Projects</h2>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-dark h6"><a href="https://radio.sen.cat/public/sradio"><i class="fas fa-music" aria-hidden="true"></i> Radio</a> <span class="badge bg-success rounded-pill" id="radio-pill">online</span></li>
+                                <li class="list-group-item bg-dark h6"><a href="https://api.sen.cat/"><i class="far fa-file-code" aria-hidden="true"></i> Random API</a> <span class="badge bg-success rounded-pill" id="api-pill">online</span></li>
+                                <li class="list-group-item bg-dark h6"><a href="https://archive.sen.cat/"><i class="fa-solid fa-box-archive"></i> Archive</a> <span class="badge bg-success rounded-pill" id="archive-pill">online</span></li>
+                                <li class="list-group-item bg-dark h6"><a href="https://box.sen.cat/"><i class="fa-solid fa-file-arrow-up"></i> Filehost</a> <span class="badge bg-success rounded-pill" id="filehost-pill">online</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-dark mt-4 mb-4" id="fortune-card">
+                        <h2 class="card-header">Fortune</h2>
+                        <div class="card-body">
+                            <p id="fortune-text"></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    </body>
+</html>

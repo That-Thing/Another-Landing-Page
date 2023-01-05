@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Nexa Light';
+    src: url(../fonts/NexaLight.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+body {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: 'Mukta', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.sen {
+    font-family: 'Nexa Light';
+    font-size: 15em;
+    background: -webkit-linear-gradient(145deg, #d1c3fc, #9bc4fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.error {
+    font-family: 'Nexa Light';
+    font-size: 15em;
+    background: -webkit-linear-gradient(145deg, #fcc3cd, #effc9b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#sen-card {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+#sen-card > .card-body {
+    transform: translateZ(30px);
+}
+.bg-dark {
+    background-color: #272727 !important;
+}
+.card {
+    box-shadow: 5px 7px 8px #0000001f;
+}
+a {
+    color: #9bc4fc;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+a:hover {
+    color: #d1c3fc;
+}
+@media only screen and (max-width: 600px) {
+    #sen-col {
+        display: none;
+    }
+}
